@@ -1,5 +1,7 @@
 package csye6200.neu.edu;
-
+import java.util.*;
+import java.io.*;
+@SuppressWarnings("unused")
 public class Stack2<T>{
 	protected T[] arr;
 	protected int top;
