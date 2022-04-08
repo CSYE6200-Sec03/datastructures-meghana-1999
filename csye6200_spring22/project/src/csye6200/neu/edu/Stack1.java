@@ -1,6 +1,7 @@
 package csye6200.neu.edu;
 import java.util.*;
 import java.io.*;
+@SuppressWarnings("unused")
 public class Stack1 {
 	int top;
 	int size;

@@ -2,11 +2,13 @@ package csye6200.neu.edu;
 import java.util.*;
 import java.io.*;
 @SuppressWarnings("unused")
+
 public class Stack2<T>{
 	protected T[] arr;
 	protected int top;
 	protected int size;
    protected int capacity;
+   //Stack construcutor
    public Stack2(int size) {
 	   arr=(T[]) new Object[size];
 	   capacity=size;
@@ -41,6 +43,7 @@ public class Stack2<T>{
    		}
    	return arr[top];
    }
+   //Stack demo method
    public static void demo() {
    	Stack1 s=new Stack1(5);
    	System.out.println("<------------------------------------Stack Implementation with Generic T data type---------------------------------->");   	
@@ -49,7 +52,7 @@ public class Stack2<T>{
    	s.push(30);
    	s.pop();
    	s.push(40);
-   	System.out.println("Top emelment is->"+s.peek());
+   	System.out.println("Top element is->"+s.peek());
    	System.out.println("Stack size:"+s.size());
    	s.pop();
    	if(s.isEmpty())

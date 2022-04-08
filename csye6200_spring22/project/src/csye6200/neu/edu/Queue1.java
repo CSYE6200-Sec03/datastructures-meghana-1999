@@ -1,11 +1,13 @@
 package csye6200.neu.edu;
 import java.util.*;
 import java.io.*;
+@SuppressWarnings("unused")
 public class Queue1 {
 	int front, rear, size;
 	int capacity;
 	int arr[];
 	int count;
+	//Queue constructor
 	public Queue1(int size)
 	{
 		arr=new int[size];
@@ -48,6 +50,7 @@ public int peek() {
 	}
 	return arr[front];
 }
+//Queue demo method
 public static void demo(){
 	Queue1 q=new Queue1(5);
 	System.out.println("<------------------------------------------Queue Implementation with Fixed length Queue data structure for int data types------------------------->");
